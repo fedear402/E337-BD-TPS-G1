@@ -1,0 +1,116 @@
+
+-CODUSU
+-NRO_HOGAR
+-COMPONENTE
+H15*
+ANO4*
+TRIMESTRE*
+REGION*
+MAS_500*
+AGLOMERADO: binaria
+PONDERA
+
+# PERSONA + EDU
+CH03:* parentezco
+CH05*: fecha de nac
+CH07*: estado civil
+CH08: cobertura medica (one hot, 9=NAN)
+CH11: educa en publica o privada (binaria, 9=NAN)
+CH13: termino_niv_ed_mas_alto (binaria, 3=NAN)
+CH14: ultimo_secundaria (one-hot, 99=NAN)
+CH15_Cod*:
+CH16: lugar_hace_cinco (one-hot, 9=NAN)
+CH16_Cod*:
+NIVEL_ED: (one-hot, 9=NAN)
+
+# TRABAJO
+ESTADO: ocupado, desocup (one-hot, 0=NAN)
+CAT_OCUP: (one-hot, 9=NAN)
+CAT_INAC: one-hot
+## BÚSQUEDA
+juntar todas en busca_activa:
+PP02C1
+PP02C2
+PP02C3
+PP02C4
+PP02C5
+PP02C6
+PP02C7
+PP02C8
+## OCUPADOS QUE TRABAJARON EN LA SEMANA
+PP03H(9=NAN)
+
+## OCUPADOS
+PP03I (9=NAN)
+PP03J (9=NAN)
+INTENSI (9=NAN)
+
+### OCUPACION PRINCIPAL
+PP04B_COD*
+
+# INGRESOS
+(-9 = NAN)
+PP08D1
+PP08D4
+PP08F1
+PP08F2
+PP08J1
+PP08J2
+PP08J3
+P21
+TOT_P12
+P47T
+V2_M
+V3_M
+V4_M
+V5_M
+V8_M
+V9_M
+V10_M
+V11_M
+V12_M
+V18_M
+V19_AM
+V19_AM
+V21_M
+T_VI  
+
+eliminar:
+DECOCUR
+IDECOCUR
+RDECOCUR
+GDECOCUR
+PDECOCUR
+ADECOCUR
+PONDIIO
+DECOCUR
+IDECOCIR
+RDECOCIR
+GDECOCIR
+PDECOCIR
+ADECOCIR
+PONDII
+
+
+
+
+
+---
+
+ITF
+
+deciles*:
+DECIFR
+IDECIFR
+RDECIFR
+GDECIFR
+PDECIFR
+ADECIFR
+IPCF
+DECCFR
+IDECCFR
+RDECCFR
+GDECCFR
+PDECCFR
+ADECCFR
+PONDIH
